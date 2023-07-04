@@ -1,0 +1,64 @@
+Q1.What is the difference between Compiler and Interpreter?
+Interpreter translates just one statement of the program at a time into machine code while Compiler scans the entire program and translates the whole of it into machine code at once.
+An interpreter takes very less time to analyze the source code. However, the overall time to execute the process is much slower while A compiler takes a lot of time to analyze the source code. However, the overall time taken to execute the process is much faster.
+Interpreters are used by programming languages like Ruby and Python and other hand Copilers used by C/C++.
+
+Q2.What is the difference between JDK, JRE, and JVM?
+JDK is for development purpose whereas JRE is for running the java programs.
+JDK and JRE both contain JVM so that we can run our java program.
+JVM is the heart of java programming language and provides platform independence.
+
+Q3.How many types of memory areas are allocated by JVM?
+1. The Method or Class Area: it stores class-level details like static variables, class name, methods, constant pool, etc. When JVM starts, it creates the method area. The method or class area size can be constant, or it can also vary. If its memory is not sufficient, JVM throws OutOfMemoryError.
+2. The Heap Area: It usually stores the objects instantiated by the application. These objects that are present in the heap can be split between threads. Usually, programmers restrict their size to avoid garbage collection pauses.
+3. Stack Area: JVM create one run-time stack for every thread. That is present in the stack area. The stack area is used to store either the data or partial results of the returning value from the methods. Once the thread stops, the run-time stack will get destroyed.
+
+Q4.What is JIT compiler?
+A just-in-time (JIT) compiler is a program that turns bytecode into instructions that can be sent directly to a computer's processor (CPU). Typically, compilers are key in deciding the speed of an application for developers and end users. 
+Just-in-time compilers can be used for performance optimization to improve application runtime.
+
+Q5.What are the various access specifiers in Java?
+There are four types of access specifiers are given below:
+1)public access specifiers
+2)protected access specifiers
+3)default access specifiers
+4)private access specifiers
+
+Q6.What is a compiler in Java?
+Software that converts a Java source program into bytecode (intermediate language) or to a just-in-time (JIT) compiler that converts bytecode into machine language.
+
+Q7.Explain the types of variables in Java?
+String - stores text, e.g. "Hello". ...
+int - stores integers (whole numbers), without decimals, e.g.s 123 or -123.
+float - stores floating point numbers, with decimals, e.g. 19.99 or -19.99.
+char - stores single characters, e.g. 'a' or 'B'. ...
+boolean - stores values with two states: true or false.
+
+Q8.What are the Datatypes in Java?
+There are two types of Datatypes:
+Primitive data types - includes byte , short , int , long , float , double , boolean and char.
+
+Q9.What are the identifiers in java?
+Identifiers are the names given to identify different building blocks of a program such as class, methods, etc.
+
+Q10.Explain the architecture of JVM.
+JVM architecture in Java contains classloader, memory area, execution engine PC registers, native method interface and native method libraries.
+1) ClassLoader
+The class loader is a subsystem used for loading class files. It performs three major functions viz. Loading, Linking, and Initialization.
+2) Method Area
+JVM Method Area stores class structures like metadata, the constant runtime pool, and the code for methods.
+3) Heap
+All the Objects, their related instance variables, and arrays are stored in the heap. This memory is common and shared across multiple threads.
+4) JVM language Stacks
+Java language Stacks store local variables, and it’s partial results. Each thread has its own JVM stack, created simultaneously as the thread is created. A new frame is created whenever a method is invoked, and it is deleted when method invocation process is complete.
+5) PC Registers
+PC register store the address of the Java virtual machine instruction which is currently executing. In Java, each thread has its separate PC register.
+6) Native Method Stacks
+Native method stacks hold the instruction of native code depends on the native library. It is written in another language instead of Java.
+7) Execution Engine
+It is a type of software used to test hardware, software, or complete systems. The test execution engine never carries any information about the tested product.
+8) Native Method interface
+The Native Method Interface is a programming framework. It allows Java code which is running in a JVM to call by libraries and native applications.
+9) Native Method Libraries
+Native Libraries is a collection of the Native Libraries(C, C++) which are needed by the Execution Engine.
+Non-primitive data types - such as String , Arrays and Classes (you will learn more about these in a later chapter)
