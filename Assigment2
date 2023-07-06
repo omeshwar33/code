@@ -1,0 +1,45 @@
+Q1. What are the Conditional Operators in Java?
+Conditional Operators in Java are used to work on conditions. 
+It is a unique operator used in place of 'If-else' statements. 
+They make complex code much easy to write and understand
+There are three types of the conditional operators in Java:
+1) Conditional AND
+2) Conditional OR
+3) Ternary Operator
+
+Q2.What are types of operators based on the number of operands?
+Operators are symbols that perform operations on variables and values.
+Operators in Java can be classified into 5 types:
+1)Arithmetic Operators [+,-,*,/,%]
+2)Assignment Operators [=,+=,*=]
+3)Relational Operators [==,!=,>,<,>=,<=]
+4)Logical Operators [&&,||,!]
+5)Unary Operators [+,-,++,--,!]
+6)Bitwise Operators [~]
+
+Q3. What is the use of Switch case in Java Programming?
+The Switch statement in Java used as a branch statement or decision-making statement that 
+provides a way to execute your code on different cases or parts that are based on the value of the expression or condition.
+
+Q4. What are Conditional Statements and use of Conditional statements in Java? 
+The common conditional statements in Java are the If-Else statement, the Switch statement, and the Ternary Operator.
+Conditional statements in Java are used to make decisions based on certain conditions.
+
+Q5. What is the Syntax of if-else statement?
+if (condition) {
+  // codes in if block
+}
+else {
+  // codes in else block
+}
+
+Q6. How do you compare two Strings in Java?
+We can Compare two Strings by using == (Comparison Operator),equals(),equalsIgnoreCase(),compareTo(),compareToIgnoreCase().
+
+Q7. What is a Mutable String in Java and Explain with an example.
+A Mutable String can be changed or Modified. 
+e.g. StringBuffer str= new StringBuffer("Good");
+     str.append(" Morning"); 
+
+Q8. Write a Program to sort a String Alphabetically.
+
