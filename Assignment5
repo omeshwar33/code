@@ -1,0 +1,65 @@
+Q1.What is Exception in Java?
+An exception is an event that occurs while the program is running and it disrupts the program execution.
+
+Q2.What is Exception Handling?
+Exception handling is responding to exceptions when a computer program runs. An exception occurs when an unexpected event happens that requires special processing.
+Examples include a user providing abnormal input, a file system error being encountered when trying to read or write a file, or a program attempting to divide by zero.
+
+Q3.What is the difference between Checked and Unchecked Exceptions and Error?
+A checked exception is caught at compile time whereas a runtime or unchecked exception is, as it states, at runtime and  error indicates trouble that primarily occurs due to the scarcity of system resources
+
+Q4.What are the difference between throw and throws in Java?
+We use the throws keyword to declare what exceptions we can throw from a method. 
+The throw keyword, on the other hand, is mainly used to throw an exception explicitly within a block of code or a method. 
+We can use the throws keyword in a method signature. It declares what exceptions a method can throw.
+
+Q5.What is multithreading in Java? mention its advantages
+Multithreading allows many parts of a program to run simultaneously. 
+These parts are referred to as threads, and they are lightweight processes that are available within the process. 
+As a result, multithreading increases CPU utilization through multitasking.
+
+Q6.Write a program to create and call a custom exception
+class MinBalanceException extends Exception
+{
+    public MinBalanceException ()
+    {
+        System.out.println ("Balance is low");
+    }
+}
+public class Main
+{
+    public static void main (String[]args)
+    {
+        try
+        {
+            int acc[] = { 100, 101, 102, 103, 104, 105 }; // input can be got from runtime too 
+            double balance[] = { 900, 2000, 1500, 1560, 1765.50 };
+            System.out.println ("Account No\t" + "Balance\t");
+            for (int i = 0; i < 5; i++)
+            {
+               System.out.println (acc[i] + "\t\t" + balance[i] + "\t");
+               if (balance[i] < 1000)
+               {
+                   throw new MinBalanceException (); //throwing user defined exception
+               }
+            }
+        }
+        catch (MinBalanceException e)
+        {
+            System.out.println ("Exception caught");
+        }
+    }
+}
+
+Q7.How can you handle exceptions in Java? 
+The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone.
+
+Q8.What is Thread in Java?
+A thread is a thread of execution in a program. The JVM allows an application to have multiple threads of execution running concurrently. 
+Every thread has a priority. Threads with higher priority are executed in preference to threads with lower priority.
+
+Q9. What are the two ways of implementing thread in Java?
+We can create threads by implementing the runnable interface and overriding the run() method.
+
+Q10.What do you mean by garbage collection?
+It is the automated process of deleting code that's no longer needed or used
